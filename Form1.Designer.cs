@@ -51,8 +51,8 @@
             label_output = new Label();
             label11 = new Label();
             label_status = new Label();
-            textBox1 = new TextBox();
-            button1 = new Button();
+            textBox_FilePath = new TextBox();
+            button_AttachFile = new Button();
             SuspendLayout();
             // 
             // label
@@ -144,7 +144,7 @@
             // button_sendEmail
             // 
             button_sendEmail.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button_sendEmail.Location = new Point(164, 400);
+            button_sendEmail.Location = new Point(164, 438);
             button_sendEmail.Name = "button_sendEmail";
             button_sendEmail.Size = new Size(88, 35);
             button_sendEmail.TabIndex = 10;
@@ -226,7 +226,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(163, 441);
+            label10.Location = new Point(490, 441);
             label10.Name = "label10";
             label10.Size = new Size(42, 15);
             label10.TabIndex = 19;
@@ -259,30 +259,31 @@
             label_status.TabIndex = 22;
             label_status.Text = "  ";
             // 
-            // textBox1
+            // textBox_FilePath
             // 
-            textBox1.Location = new Point(456, 405);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(290, 23);
-            textBox1.TabIndex = 24;
+            textBox_FilePath.Location = new Point(164, 400);
+            textBox_FilePath.Name = "textBox_FilePath";
+            textBox_FilePath.Size = new Size(582, 23);
+            textBox_FilePath.TabIndex = 24;
             // 
-            // button1
+            // button_AttachFile
             // 
-            button1.BackColor = SystemColors.AppWorkspace;
-            button1.Location = new Point(381, 400);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 31);
-            button1.TabIndex = 25;
-            button1.Text = "Attach";
-            button1.UseVisualStyleBackColor = false;
+            button_AttachFile.BackColor = SystemColors.AppWorkspace;
+            button_AttachFile.Location = new Point(89, 395);
+            button_AttachFile.Name = "button_AttachFile";
+            button_AttachFile.Size = new Size(75, 31);
+            button_AttachFile.TabIndex = 25;
+            button_AttachFile.Text = "Attach";
+            button_AttachFile.UseVisualStyleBackColor = false;
+            button_AttachFile.Click += button_AttachFile_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 500);
-            Controls.Add(button1);
-            Controls.Add(textBox1);
+            Controls.Add(button_AttachFile);
+            Controls.Add(textBox_FilePath);
             Controls.Add(label_status);
             Controls.Add(label11);
             Controls.Add(label_output);
@@ -337,7 +338,7 @@
         private Label label_output;
         private Label label11;
         private Label label_status;
-        private TextBox textBox1;
-        private Button button1;
+        private TextBox textBox_FilePath;
+        private Button button_AttachFile;
     }
 }
